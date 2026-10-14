@@ -1,6 +1,6 @@
-# FindU — Cinematic Showcase
+# FindU | Cinematic Showcase
 
-A premium, editorial, scroll-driven frontend showcase built around the original **FindU** investigation film (`assets/findu_cinematic_showcase.mp4`).
+A premium, editorial, scroll-driven frontend showcase built around the original FindU investigation film (`assets/findu_cinematic_showcase.mp4`).
 
 This experience introduces FindU's core mission: synthesizing scattered multi-camera CCTV feeds into coherent candidate timelines while keeping authorized human investigators strictly in control.
 
@@ -9,11 +9,10 @@ This experience introduces FindU's core mission: synthesizing scattered multi-ca
 ## Architecture & Experience Design
 
 - **Engine:** Vite + React + TypeScript + Tailwind CSS
-- **Timeline Synchronization:** Scroll position is mapped directly to the 60.0-second video timeline via requestAnimationFrame-throttled seeks, completely supporting bi-directional (forward and reverse) scrubbing without decoding backpressure.
-- **Audio Control:** Starts muted by default in accordance with web accessibility standards; provides an explicit unmute/mute control in the persistent header.
-- **Continuous Playback Mode:** Allows visitors to toggle between scroll scrubbing and continuous play at any point.
-- **Accessible Navigation:** Complete keyboard support (Spacebar to toggle playback, `M` to toggle audio mute, Arrow keys to step 5s forward/backward, `Home` to return to start).
-- **Responsive Layout:** Engineered and verified at 320px, 360px, 390px, 430px, 768px, 1024px, and 1440px viewports with zero horizontal overflow and letterboxed aspect preservation.
+- **Scroll-Driven Motion:** Coordinated scroll-responsive typography, pinned visual narrative stages, and contextual progressive reveals powered by Framer Motion.
+- **Cinematic Timeline Scrubbing:** Scroll position maps directly to the signature investigation film sequence using `requestAnimationFrame`-throttled playback updates with instant eager keyframe fallbacks.
+- **Interactive Primitives:** Custom magnetic cursor, perspective tilt cards, smooth progress tracking, and animated data counters.
+- **Responsive Layout:** Carefully tested across viewports from 320px mobile to 1440px desktop with zero layout shift or overflow.
 
 ---
 
@@ -50,4 +49,3 @@ This experience introduces FindU's core mission: synthesizing scattered multi-ca
    ```bash
    npm run preview
    ```
-
